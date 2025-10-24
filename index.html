@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .P-info{
+        padding-left: 29px;
+      }
+    </style>
 </head>
 <body>
     <center>
-        <h1><span>👋Hi I'm</span> <br><u>Unsha Sattar</u></h1>
+        <h1><span>👋Hi I'm</span> <br><u >Unsha Sattar</u></h1>
           <nav align="center">
         <a href="./index.html">
             <font face="Arial">Home</font>
@@ -19,7 +25,7 @@
             <font face="Arial">Contact</font>
         </a>&nbsp; |&nbsp;
         <!-- simple text slide -->
-        <marquee behavior="scroll" direction="left">
+        <marquee behavior="scroll" direction="left" class="marquee">
 Frontend Developer 💻 | Creative with Photoshop & Illustrator 🎨 | Always Learning 🚀
 </marquee>
         <br>
@@ -27,11 +33,11 @@ Frontend Developer 💻 | Creative with Photoshop & Illustrator 🎨 | Always Le
         <img src="/Professional Avatar with Soft Expression.png" alt="image" height="200" style="border-radius: 15px;">
         <br>
         <br><br>
-        <a href="#submit"><button>Contact me</button></a>
+        <a href="#submit"><button id="submit-btn" class="contact-btn">Contact me</button></a>
     </center>
 <center>
     <h1><u>✨Introduction✨</u></h1>
-  <blockquote style="font-size: 1.2rem; line-height: 1.6;">
+  <blockquote class="box" style="font-size: 1.2rem; line-height: 1.6;">
   <p>
     Hi, I’m <b>Unsha Sattar</b> — a passionate <i>Frontend Developer</i> skilled in <b>HTML</b>, <b>CSS</b>, and 
     <b>JavaScript</b>. I blend <i>creativity and code</i>, using <b>Photoshop</b> and <b>Illustrator</b> to design 
@@ -39,8 +45,9 @@ Frontend Developer 💻 | Creative with Photoshop & Illustrator 🎨 | Always Le
   </p>
 </blockquote>
 <div>
-    <blockquote>
+    
         <h1><u>🎓Skills</u></h1>
+        <blockquote class="box">
         <p>
             HTML : 
             <progress value="90" max="100"></progress>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -73,17 +80,17 @@ Frontend Developer 💻 | Creative with Photoshop & Illustrator 🎨 | Always Le
         <li>Outing</li>
        </ul>
        <h1><u>📜Persnal information</u></h1>
-       <p><b>Name : </b><span>Unsha Sattar</span></p>
-       <p><b>CNIC : </b><span>4210157237180</span></p>
-       <p><b>Mobile No: </b><span>0123-456-7890</span></p>
-       <p><b>Adress: </b><span>House-ABC sectore 123 Karachi Pakistan</span></p>
-       <p><b>Email: </b><span>arishfaa8@gmail.com</span></p>
-       <p><b>My linkedin: </b><span>https://www.linkedin.com/in/unsha-sattar-b544b8365/</span></p>
+       <p class="P-info"><b>Name : </b><span>Unsha Sattar</span></p>
+       <p class="P-info"><b>CNIC : </b><span>4210157237180</span></p>
+       <p class="P-info"><b>Mobile No: </b><span>0123-456-7890</span></p>
+       <p class="P-info"><b>Adress: </b><span>House-ABC sectore 123 Karachi Pakistan</span></p>
+       <p class="P-info"><b>Email: </b><span>arishfaa8@gmail.com</span></p>
+       <p class="P-info"><b>My linkedin: </b><span>https://www.linkedin.com/in/unsha-sattar-b544b8365/</span></p>
        </blockquote>
        <center>
             <h1><u>🔗Want to Contact me</u></h1> 
-        <form>
-  <table>
+        <form class="box">
+  <table >
     <tbody><tr>
       <td><label for="name">Enter your name :</label></td>
       <td><input type="text" id="name" placeholder="Yourname" required=""></td>
@@ -99,7 +106,7 @@ Frontend Developer 💻 | Creative with Photoshop & Illustrator 🎨 | Always Le
       <td><textarea id="message" placeholder="write here" rows="5" cols="20" required=""></textarea></td>
     </tr>
   </tbody></table>
-  <button type="submit" id="submit" onclick="greet()">submit</button>
+  <button type="submit" id="submit-btn" onclick="greet()">submit</button>
 </form>
 
 </center>

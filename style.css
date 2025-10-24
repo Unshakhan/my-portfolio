@@ -1,0 +1,149 @@
+
+img:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+  /* ====== General Page Styling ====== */
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(to right, #e3f2fd , #f5adf5);
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    span {
+      color: #ff4081;
+      font-weight: bold;
+    }
+
+    /* ====== Navigation Bar ====== */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff4081;
+    }
+
+    /* ====== Introduction Section ====== */
+    blockquote {
+      background-color: white;
+      border-left: 5px solid #ff4081;
+      margin: 20px auto;
+      width: 70%;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* ====== Image ====== */
+    img {
+      border: 3px solid #ff4081;
+      border-radius: 15px;
+      height: 200px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* ====== Skills Section ====== */
+    progress {
+      height: 20px;
+      border-radius: 10px;
+    }
+
+    progress::-webkit-progress-bar {
+      background-color: #ddd;
+      border-radius: 10px;
+    }
+
+    progress::-webkit-progress-value {
+      background-color: #ff4081;
+      border-radius: 10px;
+    }
+
+    /* ====== Buttons ====== */
+    #submit-btn{
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition:  0.3s;
+    }
+
+    #submit-btn:hover {
+      background-color: #e91e63;
+        transform: scale(1.1);
+    transition: 0.3s;
+    }
+
+    /* ====== Contact Form ====== */
+    form {
+      background-color: white;
+      width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+    /* ====== Hobbies & Info ====== */
+    ul {
+      list-style: circle;
+      width: 60%;
+      margin: auto;
+      font-size: 18px;
+      color: #333;
+    }
+
+    p span {
+      color: #ff4081;
+      font-weight: bold;
+    }
+
+    .marquee {
+      background-color: #222;
+      color: white;
+      padding: 8px;
+      font-weight: bold;
+      border-radius: 8px;
+      width: 80%;
+      display: block;
+      margin: 10px auto;
+    }
+.box:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
