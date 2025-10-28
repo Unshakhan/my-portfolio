@@ -1,121 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      .P-info{
-        padding-left: 29px;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <!-- font awesome link -->
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
+  <!-- Css link -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <center>
-        <h1><span>👋Hi I'm</span> <br><u >Unsha Sattar</u></h1>
-          <nav align="center">
-        <a href="./index.html">
-            <font face="Arial">Home</font>
-        </a> &nbsp;| &nbsp;
-        <a href="./about.html">
-            <font face="Arial">About</font>
-        </a>&nbsp; |&nbsp;
-        <a href="./contact.html">
-            <font face="Arial">Contact</font>
-        </a>&nbsp; |&nbsp;
-        <!-- simple text slide -->
-        <marquee behavior="scroll" direction="left" class="marquee">
-Frontend Developer 💻 | Creative with Photoshop & Illustrator 🎨 | Always Learning 🚀
-</marquee>
-        <br>
-        <br>
-        <img src="/Professional Avatar with Soft Expression.png" alt="image" height="200" style="border-radius: 15px;">
-        <br>
-        <br><br>
-        <a href="#submit"><button id="submit-btn" class="contact-btn">Contact me</button></a>
-    </center>
-<center>
-    <h1><u>✨Introduction✨</u></h1>
-  <blockquote class="box" style="font-size: 1.2rem; line-height: 1.6;">
-  <p>
+  <!-- header vith navbar and logo -->
+   <header>
+   <a href="#" class="logo">
+    <i class="fa-solid fa-code logo-icon"></i>
+    <span class="logo-text">Unsha Sattar</span>
+   </a>
+  <nav>
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+  <!-- Hero section started -->
+   <section class="hero" id="home">
+    <div class="content">
+      <h1>Unsha Sattar</h1>
+      <h2><span class="typing-text"> Frontend Developer</span></h2>
+        <p>
     Hi, I’m <b>Unsha Sattar</b> — a passionate <i>Frontend Developer</i> skilled in <b>HTML</b>, <b>CSS</b>, and 
     <b>JavaScript</b>. I blend <i>creativity and code</i>, using <b>Photoshop</b> and <b>Illustrator</b> to design 
     and build responsive, modern websites. 🚀
   </p>
-</blockquote>
-<div>
-    
-        <h1><u>🎓Skills</u></h1>
-        <blockquote class="box">
-        <p>
-            HTML : 
-            <progress value="90" max="100"></progress>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             CSS : 
-            <progress value="90" max="100"></progress>
-        </p>
-        <p>
-            JavaScript : 
-            <progress value="80" max="100"></progress>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             Bootstrap : 
-            <progress value="80" max="100"></progress>
-        </p>
-        <p>
-           Github : 
-            <progress value="60" max="100"></progress>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Photoshop : 
-            <progress value="50" max="100"></progress>
-        </p>
-
-        
-       
+  <!-- div for btn  -->
+  <div class="cta-buttons"> 
+    <a href="#projects" class="btn btn-primary">
+      <i class="fas fa-code"></i>View Projects
+    </a>
+    <a href="#contact" class="btn btn-secondary">
+<i class="fa-solid fa-paper-plane"></i>Contact Me
+    </a>
+  </div>
+  <!-- div for icons -->
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
     </div>
-        </center>
-       <h1><u>💥Hobbies</u></h1>
-       <ul>
-        <li>Cooking</li>
-        <li>Watching</li>
-        <li>Plying</li>
-        <li>Learning New things</li>
-        <li>Outing</li>
-       </ul>
-       <h1><u>📜Persnal information</u></h1>
-       <p class="P-info"><b>Name : </b><span>Unsha Sattar</span></p>
-       <p class="P-info"><b>CNIC : </b><span>4210157237180</span></p>
-       <p class="P-info"><b>Mobile No: </b><span>0123-456-7890</span></p>
-       <p class="P-info"><b>Adress: </b><span>House-ABC sectore 123 Karachi Pakistan</span></p>
-       <p class="P-info"><b>Email: </b><span>arishfaa8@gmail.com</span></p>
-       <p class="P-info"><b>My linkedin: </b><span>https://www.linkedin.com/in/unsha-sattar-b544b8365/</span></p>
-       </blockquote>
-       <center>
-            <h1><u>🔗Want to Contact me</u></h1> 
-        <form class="box">
-  <table >
-    <tbody><tr>
-      <td><label for="name">Enter your name :</label></td>
-      <td><input type="text" id="name" placeholder="Yourname" required=""></td>
-    </tr>
-
-    <tr>
-      <td><label for="email">Enter your Email :</label></td>
-      <td><input type="email" id="email" placeholder="abc@gmail.com" required=""></td>
-    </tr>
-
-    <tr>
-      <td><label for="message">Write Message :</label></td>
-      <td><textarea id="message" placeholder="write here" rows="5" cols="20" required=""></textarea></td>
-    </tr>
-  </tbody></table>
-  <button type="submit" id="submit-btn" onclick="greet()">submit</button>
-</form>
-
-</center>
-<script>
-    function greet() {
-        alert("✨Thank you for your Time✨")
-        
-    }
-</script>
-    
+    <div class="profile-container">
+      <div class="border-outer"></div>
+      <div class="border-middle"></div>
+      <div class="border-inner"></div>
+      <div class="border-container"></div>
+      <div class="pulse-ring"></div>
+      <div class="pulse-ring"></div>
+      <div class="pulse-ring"></div>
+      <img src="./images/profile-img.png" alt="profile-img" width="240px" class="profile-img">
+    </div>
+   </section>
+  
 </body>
 </html>
