@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
+  
   <!-- font awesome link -->
- <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
   <!-- Css link -->
   <link rel="stylesheet" href="style.css">
+  
 </head>
+
 <body>
+  <div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
   <!-- header vith navbar and logo -->
-   <header>
-   <a href="#" class="logo">
-    <i class="fa-solid fa-code logo-icon"></i>
-    <span class="logo-text">Unsha Sattar</span>
-   </a>
-  <nav>
-    <div class="menu-toggle">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <a href="#" class="logo">
+      <i class="fa-solid fa-code logo-icon"></i>
+      <span class="logo-text">Unsha Sattar</span>
+    </a>
+    <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+    <nav>
+      <!-- <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <!-- Hero section started -->
-   <section class="hero" id="home">
+  <!--____________________ Hero section started_______________________________ -->
+  <section class="hero" id="home">
     <div class="content">
       <h1>Unsha Sattar</h1>
-      <h2><span class="typing-text"> Frontend Developer</span></h2>
-        <p>
-    Hi, I’m <b>Unsha Sattar</b> — a passionate <i>Frontend Developer</i> skilled in <b>HTML</b>, <b>CSS</b>, and 
-    <b>JavaScript</b>. I blend <i>creativity and code</i>, using <b>Photoshop</b> and <b>Illustrator</b> to design 
-    and build responsive, modern websites. 🚀
-  </p>
-  <!-- div for btn  -->
-  <div class="cta-buttons"> 
-    <a href="#projects" class="btn btn-primary">
-      <i class="fas fa-code"></i>View Projects
-    </a>
-    <a href="#contact" class="btn btn-secondary">
-<i class="fa-solid fa-paper-plane"></i>Contact Me
-    </a>
-  </div>
-  <!-- div for icons -->
-  <div class="social-icons">
-    <a href="#"><i class="fa-brands fa-github"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-  </div>
+      <h2>I am a <span class="typing-text"></span></h2>
+      <p>
+        Hi, I’m <b>Unsha Sattar</b> a passionate <i>Frontend Developer</i> skilled in <b>HTML</b>, <b>CSS</b>, and
+        <b>JavaScript</b>. I blend <i>creativity and code</i>, using <b>Photoshop</b> and <b>Illustrator</b> to design
+        and build responsive, modern websites. 
+      </p>
+      <!-- div for btn  -->
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i>View Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fa-solid fa-paper-plane"></i>Contact Me
+        </a>
+      </div>
+      <!-- div for icons -->
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
     </div>
     <div class="profile-container">
       <div class="border-outer"></div>
@@ -68,7 +76,360 @@
       <div class="pulse-ring"></div>
       <img src="./images/profile-img.png" target="_blank" alt="profile-img" width="240px" class="profile-img">
     </div>
-   </section>
+  </section>
+  <!--________________________services section__________________________   -->
+  <section class="services active" id="about" style="margin-top: 45px;">
+    <h2 class="heading">My <span>SERVICES</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <div class="icon">
+          <i class="fa-solid fa-code "></i>
+          <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <h3>Web Development</h3>
+        <p>  Hello! I’m a web development student at SMIT.  
+  I’ve already completed HTML and CSS, and I’m now diving into JavaScript.  
+  I love bringing creative ideas to life through clean and responsive designs!</p>
+      </div>
+      <div class="services-box">
+        <div class="icon">
+          <i class="fa-solid fa-palette"></i>
+          <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <h3>Graphic designing </h3>
+        <p>Besides coding, I have a strong interest in design . I enjoy working with Adobe Photoshop and have basic experience using Adobe Illustrator to bring creative ideas to life.</p>
+      </div>
+    </div>
+  </section>
+  <!--_________________________ resume section _____________________________-->
+  <section class="resume-active">
+    <div class="resume-container">
+      <div class="resume-box">
+        <h2>Why <span id="greentext" >Hire Me ?</span></h2>
+        <p class="desc">
+           I’m dedicated, detail-oriented, and always eager to learn new technologies.  
+  I combine creativity with clean coding to build modern, responsive, and user-friendly websites.  
+  My goal is to deliver quality work on time and continuously grow as a developer.
+        </p>
+        <button class="resume-btn active">Experience</button>
+        <button class="resume-btn">Education</button>
+        <button class="resume-btn">Skills</button>
+        <button class="resume-btn">About Me</button>
+      </div>
+      <div class="resume-box">
+        <div class="resume-detail experience">
+          <h2 class="heading">
+            My <span>Experience</span>
+          </h2>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
+            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
+            veniam ratione.</p>
+        </div>
+
+        <div class="resume-detail education">
+          <h2 class="heading">
+            My <span>Education</span>
+          </h2>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
+            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
+            veniam ratione.</p>
+        </div>
+
+        <div class="resume-detail skills">
+          <h2 class="heading">
+            My <span>Skills</span>
+          </h2>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
+            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
+            veniam ratione.</p>
+        </div>
+
+        <div class="resume-detail experience">
+          <h2 class="heading">
+            About <span>Me</span>
+          </h2>
+          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
+            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
+            veniam ratione.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- _____________________________Project___________________________________ -->
+  <section class="portfolio" id="project">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="cards">
+      <div class="card">
+        <a href="https://tere-figma-design.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-1.png" alt="Project 1" width="300">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+        <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://fight-game321.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-2.png" alt="Project 2" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+         <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button>
+          <button class="button">JS</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://radiant-ganache-316119.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-3.png" alt="Project 3" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+           <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button>
+           <button class="button">JS</button></div>
+      </div>
+      <div class="card">
+        <a href="https://olx-clone-layout.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-4.png" alt="Project 3" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+        <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button></div>
+      </div>
+
+      <!-- <div class="cards"> -->
+      <div class="card">
+        <a href="https://app.netlify.com/projects/youtubeclone321/overview" target="_blank">
+          <img class="card1-img" src="./images/img-5.png" alt="Project 1" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+        <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://login-signup-form2.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-6.png" alt="Project 2" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+        <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://radiant-ganache-316119.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-7.png" alt="Project 3" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+        <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button></div>
+      </div>
+      <div class="card">
+        <a href="https://radiant-ganache-316119.netlify.app/" target="_blank">
+          <img class="card1-img" src="./images/img-8.png" alt="Project 3" width="300" height="150">
+        </a>
+        <div class="p-div">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
+          <i class="fa-regular fa-heart" id="heart"></i>
+        </div>
+        <div class="buttons-div"><button class="button">HTML</button>
+          <button class="button">CSS</button></div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <div class="skills-container">
+      <h2 class="heading">My <span>Skills</span></h2>
+    <div class="container">
+         
+  <div class="box">
+    <div class="shadow"></div>
+    <div class="content">
+      <div class="percent" data-text="HTML" style="--num: 95">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+      </div>
+      <div class="number">
+        <h2>95<span>%</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="shadow"></div>
+    <div class="content">
+      <div class="percent" data-text="CSS" style="--num: 95">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+      </div>
+      <div class="number">
+        <h2>95<span>%</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="shadow"></div>
+    <div class="content">
+      <div class="percent" data-text="JS" style="--num: 60">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+      </div>
+      <div class="number">
+        <h2>70<span>%</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="container">
+  <div class="box">
+    <div class="shadow"></div>
+    <div class="content">
+      <div class="percent" data-text="Netlify" style="--num: 95">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+      </div>
+      <div class="number">
+        <h2>95<span>%</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="shadow"></div>
+    <div class="content">
+      <div class="percent" data-text="Github" style="--num: 85">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+      </div>
+      <div class="number">
+        <h2>95<span>%</span></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="shadow"></div>
+    <div class="content">
+      <div class="percent" data-text="Bootstrap" style="--num: 90">
+        <div class="dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+      </div>
+      <div class="number">
+        <h2>70<span>%</span></h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </section>
+  <!-- ________________________Contact section_________________ -->
+  <section class="contact " id="contact">
+    <div class="contact-container">
+      <div class="contact-box">
+        <h2>Let'<span id="greentext"> Work Together </span></h2>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat magni ipsum veniam hic
+          voluptatem soluta assumenda, consequuntur in expedita?</p>
+          <div class="contact-detail">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div class="detail">
+              <p>Phone</p>
+              <p>031 2345 6789</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+               <i class="fa-solid fa-envelope"></i>
+            <div class="detail">
+              <p>Email</p>
+              <p>myemail@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+      <i class="fa-solid fa-location-dot"></i>
+            <div class="detail">
+              <p>Address</p>
+              <p>123 Anywhere Street, Any City</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="contact-box">
+        <form action="">
+          <h2 class="heading">Contact <span>Me</span> </h2>
+            <div class="field-box">
+              <input type="text" placeholder="Full Name" required>
+              <input type="email" placeholder="Email Address" required>
+              <input type="text" placeholder="Phone Number" required>
+              <input type="text" placeholder="Email Subject" required>
+              <textarea name="" id="" placeholder="Your Message...." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">  
+          Submit
+        </button>
+       
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <section>
+    <footer>
+<hr style="margin-top: 40px; color:yellowgreen ;">
+<h3 style="margin-top: 20px;">&copy; 2025 Unsha Sattar</h3>
+<div class="iconcontainer">
+    <i class="fa-brands fa-apple" id="apple"></i>
+    <i class="fa-brands fa-twitter" id="twitter"></i>
+    <i class="fa-brands fa-github-square github" id="github"></i>
+    <i class="fa-brands fa-facebook-square" id="facebook"></i>
+  </div>
+</footer>
+  </section>
+
   
 </body>
+
 </html>
