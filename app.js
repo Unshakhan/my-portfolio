@@ -78,27 +78,38 @@ function darkTheme(){
   var spans= hero.getElementsByTagName("span")
 //   var allh1 = hero.getElementsByTagName("h1")
 var myname=document.getElementsByClassName("MyNameheading")
-  // check if current background includes the light image URL
+btn.style.backgroundColor = "transparent"
+btn.style.padding = "10px"
+// btn.style.transform ="scale(1.2)"
+btn.style.borderRadius = "10px"
+btn.style.position ="fixed"
+btn.style.bottom = "-700px";      // bottom se distance
+btn.style.right = "20px";  
+// btn.style.right = "0px";
   if (hero.style.backgroundImage.includes("freepik.com")) {
-    // ✅ Dark Mode
+    // btn.classList.remove("button");
     hero.style.backgroundImage = "url('./images/green-bg-2')";
     hero.style.backgroundSize = "contain";          
 hero.style.backgroundRepeat = "repeat";    
 // hero.style.backgroundPosition = "center"; 
     hero.style.color = "white";
+   btn.style.border ="2px solid #c9d6c2ff";
+    btn.style.color = "white";
     btn.innerHTML = "Light Mode";
     for (var i = 0; i < paras.length; i++) {
   paras[i].style.setProperty("color", "white", "important");
 }
   }
   else {
-    // ✅ Light Mode
+  
     hero.style.backgroundImage = "url('https://img.freepik.com/premium-vector/abstract-background-pastel-colors_627230-60.jpg?w=360')";
     hero.style.backgroundSize = "contain";         
 hero.style.backgroundRepeat = "repeat";  
-
+btn.innerHTML = "Dark Mode";
+btn.style.color = "black"
+// btn.classList.add("button");
+btn.style.border ="2px solid #192e0eff";
 myname[0].style.color = "green";
-// hero.style.backgroundPosition = "center"; 
 for (var i = 0; i < paras.length; i++) {
   paras[i].style.setProperty("color", "black", "important");
 }
@@ -108,4 +119,5 @@ for (var i = 0; i < spans.length; i++) {
 }
 
   }
+
 }
