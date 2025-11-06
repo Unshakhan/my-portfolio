@@ -23,7 +23,7 @@
 // console.log("Name: " + name);
 // console.log("Age: " + age);
 // console.log("Skills: " + skills.join(", "));
-
+// 
 //  ______________________________
 // function to add two numbers
 // _______________________________
@@ -68,3 +68,44 @@
 // var val2= Number(prompt("Enter Second value"))
 // var val3= Number(prompt("Enter third value"))
 // Avg(val1,val2,val3)
+//================================================
+//---------------Toggle Button----------------
+//================================================
+function darkTheme(){
+  var hero = document.getElementsByClassName("maindiv")[0];
+  var btn = document.getElementById("btn");
+  var paras = hero.getElementsByTagName("p");
+  var spans= hero.getElementsByTagName("span")
+//   var allh1 = hero.getElementsByTagName("h1")
+var myname=document.getElementsByClassName("MyNameheading")
+  // check if current background includes the light image URL
+  if (hero.style.backgroundImage.includes("freepik.com")) {
+    // ✅ Dark Mode
+    hero.style.backgroundImage = "url('./images/green-bg-2')";
+    hero.style.backgroundSize = "contain";          
+hero.style.backgroundRepeat = "repeat";    
+// hero.style.backgroundPosition = "center"; 
+    hero.style.color = "white";
+    btn.innerHTML = "Light Mode";
+    for (var i = 0; i < paras.length; i++) {
+  paras[i].style.setProperty("color", "white", "important");
+}
+  }
+  else {
+    // ✅ Light Mode
+    hero.style.backgroundImage = "url('https://img.freepik.com/premium-vector/abstract-background-pastel-colors_627230-60.jpg?w=360')";
+    hero.style.backgroundSize = "contain";         
+hero.style.backgroundRepeat = "repeat";  
+
+myname[0].style.color = "green";
+// hero.style.backgroundPosition = "center"; 
+for (var i = 0; i < paras.length; i++) {
+  paras[i].style.setProperty("color", "black", "important");
+}
+
+for (var i = 0; i < spans.length; i++) {
+  spans[i].style.setProperty("color", "green", "important");
+}
+
+  }
+}

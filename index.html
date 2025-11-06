@@ -14,7 +14,7 @@
   
 </head>
 
-<body>
+<body class="maindiv">
   <!-- <div class="bubble"></div>
 <div class="bubble"></div>
 <div class="bubble"></div> -->
@@ -38,13 +38,14 @@
         <li><a href="#project">Project</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
+         <button id="btn" onclick="darkTheme()">clickme</button>
       </ul>
     </nav>
   </header>
   <!--____________________ Hero section started_______________________________ -->
   <section class="hero" id="home">
     <div class="content">
-      <h1>Unsha Sattar</h1>
+      <h1 class="MyNameheading">Unsha Sattar</h1>
       <h2>I am a <span class="typing-text"></span></h2>
       <p>
         Hi, I’m <b>Unsha Sattar</b> a passionate <i>Frontend Developer</i> skilled in <b>HTML</b>, <b>CSS</b>, and
@@ -405,9 +406,9 @@
               <input type="email" placeholder="Email Address" id="email" required>
               <input type="tel"  placeholder="Phone Number" id="number"  maxlength="11" required >
               <input type="text" placeholder="Email Subject" id="topic" required>
-              <textarea  placeholder="Your Message...." id="msg" required ></textarea>
+              <textarea type="text" placeholder="Your Message...." id="msg" required ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" onclick="submitForm()">  
+            <button type="button" class="btn btn-primary" onclick="submitForm()">  
           Submit
             </button>
         </form>
