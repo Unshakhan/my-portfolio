@@ -25,10 +25,11 @@ html {
 body {
   /* background:linear-gradient(135deg , #0c0f17 0%, #151925 100%); */
   background-image: url(./images/background-img);
+
   background-size: contain;
   /* color: #e6e9f0; */
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 header{
@@ -938,10 +939,10 @@ padding: 20px;
 .box::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   width: 15px;
-  height: 100%;
+  height: 270px;
   background: linear-gradient(#151925, #323946);
   filter: blur(1px);
 }
@@ -1035,15 +1036,17 @@ padding: 20px;
 
 .number {
   position: relative;
-  margin-top: 1rem;
+  margin-top: 5px;
   opacity: 0;
   animation: fadeIn 1s linear forwards;
-  animation-delay: 0.8s;
+  /* animation-delay: 0.8s; */
 }
 
 .number h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #d1d5e1;
+  box-sizing: border-box;
+  margin-bottom: 9%;
 }
 
 .number h2 span {
@@ -1102,4 +1105,152 @@ padding: 20px;
   to {
     filter: hue-rotate(360deg);
   }
+}
+#btn{
+  color: white;
+  background: none;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.resume-detail {
+  display: none;
+}
+
+.resume-detail.active {
+  display: block;
+}
+/* ========================== */
+/* ===Delete Btn ==== */
+.deleteBtn {
+  /* margin-top: 10px; */
+  padding: 5px 12px;
+  border: 2px solid #7cf03d;
+  background-color: transparent;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+.deleteBtn:hover {
+ border: 3px solid #da1f07;
+  background-color: transparent;
+  transform: scale(1.1); /* thoda bada ho jaye */
+  box-shadow: 0 4px 10px rgba(255, 76, 76, 0.5);
+}
+/* ================ */
+.add-skill-box {
+  display: flex;
+  flex-wrap: wrap;           /* responsive layout */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* Text Input (Skill Name) */
+#skillInput {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #7cf03d;
+  border-radius: 8px;
+  background-color: #1a1f2e;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* On focus */
+#skillInput:focus {
+  border-color: #00ff6a;
+  box-shadow: 0 0 10px #00ff6a88;
+}
+
+/* Number Input (Skill %) */
+#skillPercent {
+  width: 100px;              /* fix width for percentage */
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #7cf03d;
+  border-radius: 8px;
+  background-color: #1a1f2e;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* On focus */
+#skillPercent:focus {
+  border-color: #00ff6a;
+  box-shadow: 0 0 10px #00ff6a88;
+}
+
+/* Add Button */
+#addSkillBtn {
+  padding: 10px 20px;
+  background-color: #7cf03d;
+  color: #111;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#addSkillBtn:hover {
+  background-color: #00ff6a;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px #00ff6a55;
+}
+/* ======================= */
+/* SweetAlert Popup */
+.my-popup {
+  background: #000 !important;              /* Black Background */
+  border: 2px solid #00ff85 !important;     /* Light Green Border */
+  box-shadow: 0 0 25px #00ff85 !important;  /* Glow */
+  border-radius: 15px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Title Style (Green) */
+.my-title {
+  color: #00ff85 !important;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Description Style */
+.my-text {
+  color: #d1ffe8 !important;
+  font-size: 16px;
+}
+
+/* Glow Animation (Optional) */
+.my-popup:hover {
+  box-shadow: 0 0 40px #00ff85 !important;
+  transition: 0.3s ease;
+  border: 3px solid #a4eeca !important;
+}
+/* Neon Green Button */
+.my-btn {
+  background-color: #00ff85 !important;
+  color: #000 !important;
+  border-radius: 8px !important;
+  padding: 8px 20px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  box-shadow: 0 0 10px #00ff85 !important;
+}
+
+/* Glow on hover */
+.my-btn:hover {
+  box-shadow: 0 0 20px #00ff85 !important;
+  transform: scale(1.05);
+  transition: 0.2s ease;
 }

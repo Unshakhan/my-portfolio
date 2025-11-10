@@ -5,19 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
-  
+
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 
   <!-- Css link -->
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
 
 <body class="maindiv">
-  <!-- <div class="bubble"></div>
-<div class="bubble"></div>
-<div class="bubble"></div> -->
+  
   <!-- header vith navbar and logo -->
   <header>
     <a href="#" class="logo">
@@ -25,34 +23,34 @@
       <span class="logo-text">Unsha Sattar</span>
     </a>
     <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-  </label>
+    <label for="menu-toggle" class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </label>
     <nav>
       <!-- <div class="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </div> -->
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    
+        <li><a href="#home" onclick="showalert(this)">Home</a></li>
+        <li><a href="#about" onclick="showalert(this)">About</a></li>
+        <li><a href="#project" onclick="showalert(this)">Project</a></li>
+        <li><a href="#skills" onclick="showalert(this)">Skills</a></li>
+        <li><a href="#contact" onclick="showalert(this)">Contact</a></li>
+
         <li><button id="btn" onclick="darkTheme()">clickme</button></li>
       </ul>
-       
+
     </nav>
   </header>
   <!--____________________ Hero section started_______________________________ -->
   <section class="hero" id="home">
     <div class="content">
-      <h1 class="MyNameheading">Unsha Sattar</h1>
-      <h2>I am a <span class="typing-text"></span></h2>
+      <h1 id="MyNameheading">Unsha Sattar</h1>
+      <p>I am a <span class="typing-text"></span></p>
       <p>
         Hi, I’m <b>Unsha Sattar</b> a passionate <i>Frontend Developer</i> skilled in <b>HTML</b>, <b>CSS</b>, and
         <b>JavaScript</b>. I blend <i>creativity and code</i>, using <b>Photoshop</b> and <b>Illustrator</b> to design
-        and build responsive, modern websites. 
+        and build responsive, modern websites.
       </p>
       <!-- div for btn  -->
       <div class="cta-buttons">
@@ -90,9 +88,9 @@
           <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
         </div>
         <h3>Web Development</h3>
-        <p>  Hello! I’m a web development student at SMIT.  
-  I’ve already completed HTML and CSS, and I’m now diving into JavaScript.  
-  I love bringing creative ideas to life through clean and responsive designs!</p>
+        <p> Hello! I’m a web development student at SMIT.
+          I’ve already completed HTML and CSS, and I’m now diving into JavaScript.
+          I love bringing creative ideas to life through clean and responsive designs!</p>
       </div>
       <div class="services-box">
         <div class="icon">
@@ -100,7 +98,8 @@
           <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
         </div>
         <h3>Graphic designing </h3>
-        <p>Besides coding, I have a strong interest in design . I enjoy working with Adobe Photoshop and have basic experience using Adobe Illustrator to bring creative ideas to life.</p>
+        <p>Besides coding, I have a strong interest in design . I enjoy working with Adobe Photoshop and have basic
+          experience using Adobe Illustrator to bring creative ideas to life.</p>
       </div>
     </div>
   </section>
@@ -108,11 +107,11 @@
   <section class="resume-active">
     <div class="resume-container">
       <div class="resume-box">
-        <h2>Why <span id="greentext" >Hire Me ?</span></h2>
+        <h2>Why <span id="greentext">Hire Me ?</span></h2>
         <p class="desc">
-           I’m dedicated, detail-oriented, and always eager to learn new technologies.  
-  I combine creativity with clean coding to build modern, responsive, and user-friendly websites.  
-  My goal is to deliver quality work on time and continuously grow as a developer.
+          I’m dedicated, detail-oriented, and always eager to learn new technologies.
+          I combine creativity with clean coding to build modern, responsive, and user-friendly websites.
+          My goal is to deliver quality work on time and continuously grow as a developer.
         </p>
         <button class="resume-btn active">Experience</button>
         <button class="resume-btn">Education</button>
@@ -133,32 +132,31 @@
           <h2 class="heading">
             My <span>Education</span>
           </h2>
-          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
-            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
-            veniam ratione.</p>
+          <p class="desc">I am a BS Botany graduate and currently completing a Web and App Development diploma from
+            SMIT, where I am
+            learning modern web technologies, responsive design, and practical development skills.</p>
         </div>
 
         <div class="resume-detail skills">
           <h2 class="heading">
             My <span>Skills</span>
           </h2>
-          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
-            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
-            veniam ratione.</p>
+          <p class="desc">Proficient in HTML, CSS, JavaScript, Bootstrap, and GitHub. I also have basic design skills in
+            Photoshop and Illustrator, which help me create clean and visually appealing UI designs.</p>
         </div>
 
         <div class="resume-detail experience">
           <h2 class="heading">
             About <span>Me</span>
           </h2>
-          <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt inventore ducimus earum
-            voluptate quasi dolore sint, corrupti quia, sequi qui doloremque iusto cum reiciendis harum tenetur ea,
-            veniam ratione.</p>
+          <p class="desc">I’m a passionate Web and App Development student who loves creating modern, clean, and
+            user-friendly websites. I enjoy learning new technologies and continuously improving my skills to become a
+            better developer.</p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- _____________________________Project___________________________________ -->
   <section class="portfolio" id="project">
     <h2 class="heading">Latest <span>Project</span></h2>
@@ -184,7 +182,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
           <i class="fa-regular fa-heart" id="heart"></i>
         </div>
-         <div class="buttons-div"><button class="button">HTML</button>
+        <div class="buttons-div"><button class="button">HTML</button>
           <button class="button">CSS</button>
           <button class="button">JS</button>
         </div>
@@ -198,9 +196,10 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis.</p>
           <i class="fa-regular fa-heart" id="heart"></i>
         </div>
-           <div class="buttons-div"><button class="button">HTML</button>
+        <div class="buttons-div"><button class="button">HTML</button>
           <button class="button">CSS</button>
-           <button class="button">JS</button></div>
+          <button class="button">JS</button>
+        </div>
       </div>
       <div class="card">
         <a href="https://olx-clone-layout.netlify.app/" target="_blank">
@@ -211,7 +210,8 @@
           <i class="fa-regular fa-heart" id="heart"></i>
         </div>
         <div class="buttons-div"><button class="button">HTML</button>
-          <button class="button">CSS</button></div>
+          <button class="button">CSS</button>
+        </div>
       </div>
 
       <!-- <div class="cards"> -->
@@ -250,7 +250,8 @@
           <i class="fa-regular fa-heart" id="heart"></i>
         </div>
         <div class="buttons-div"><button class="button">HTML</button>
-          <button class="button">CSS</button></div>
+          <button class="button">CSS</button>
+        </div>
       </div>
       <div class="card">
         <a href="https://radiant-ganache-316119.netlify.app/" target="_blank">
@@ -261,115 +262,145 @@
           <i class="fa-regular fa-heart" id="heart"></i>
         </div>
         <div class="buttons-div"><button class="button">HTML</button>
-          <button class="button">CSS</button></div>
+          <button class="button">CSS</button>
+        </div>
       </div>
     </div>
     </div>
   </section>
-  <section class="skills" id="skills">
+   <!-- <section class="skills" id="skills"> 
     <div class="skills-container">
       <h2 class="heading">My <span>Skills</span></h2>
-    <div class="container">
-         
-  <div class="box">
-    <div class="shadow"></div>
-    <div class="content">
-      <div class="percent" data-text="HTML" style="--num: 95">
-        <div class="dot"></div>
-        <svg>
-          <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
-        </svg>
-      </div>
-      <div class="number">
-        <h2>95<span>%</span></h2>
-      </div>
-    </div>
-  </div>
+      
+      <div class="container">
 
-  <div class="box">
-    <div class="shadow"></div>
-    <div class="content">
-      <div class="percent" data-text="CSS" style="--num: 95">
-        <div class="dot"></div>
-        <svg>
-          <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
-        </svg>
-      </div>
-      <div class="number">
-        <h2>95<span>%</span></h2>
-      </div>
-    </div>
-  </div>
+        <div class="box">
+          <div class="shadow"></div>
+          <div class="content">
+            <div class="percent" data-text="HTML" style="--num: 95">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div class="number">
+              <h2>95<span>%</span></h2>
+            </div>
+          </div>
+        </div>
 
-  <div class="box">
-    <div class="shadow"></div>
-    <div class="content">
-      <div class="percent" data-text="JS" style="--num: 60">
-        <div class="dot"></div>
-        <svg>
-          <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
-        </svg>
-      </div>
-      <div class="number">
-        <h2>70<span>%</span></h2>
-      </div>
-    </div>
-  </div>
-</div>
-    <div class="container">
-  <div class="box">
-    <div class="shadow"></div>
-    <div class="content">
-      <div class="percent" data-text="Netlify" style="--num: 95">
-        <div class="dot"></div>
-        <svg>
-          <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
-        </svg>
-      </div>
-      <div class="number">
-        <h2>95<span>%</span></h2>
-      </div>
-    </div>
-  </div>
+        <div class="box">
+          <div class="shadow"></div>
+          <div class="content">
+            <div class="percent" data-text="CSS" style="--num: 95">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div class="number">
+              <h2>95<span>%</span></h2>
+            </div>
+          </div>
+        </div>
 
-  <div class="box">
-    <div class="shadow"></div>
-    <div class="content">
-      <div class="percent" data-text="Github" style="--num: 85">
-        <div class="dot"></div>
-        <svg>
-          <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
-        </svg>
+        <div class="box">
+          <div class="shadow"></div>
+          <div class="content">
+            <div class="percent" data-text="JS" style="--num: 60">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div class="number">
+              <h2>70<span>%</span></h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="number">
-        <h2>95<span>%</span></h2>
-      </div>
-    </div>
-  </div>
+      <div class="container">
+        <div class="box">
+          <div class="shadow"></div>
+          <div class="content">
+            <div class="percent" data-text="Netlify" style="--num: 95">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div class="number">
+              <h2>95<span>%</span></h2>
+            </div>
+          </div>
+        </div>
 
-  <div class="box">
-    <div class="shadow"></div>
-    <div class="content">
-      <div class="percent" data-text="Bootstrap" style="--num: 90">
-        <div class="dot"></div>
-        <svg>
-          <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
-        </svg>
-      </div>
-      <div class="number">
-        <h2>70<span>%</span></h2>
+        <div class="box">
+          <div class="shadow"></div>
+          <div class="content">
+            <div class="percent" data-text="Github" style="--num: 85">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div class="number">
+              <h2>95<span>%</span></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="shadow"></div>
+          <div class="content">
+            <div class="percent" data-text="Bootstrap" style="--num: 90">
+              <div class="dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+            </div>
+            <div class="number">
+              <h2>70<span>%</span></h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>  -->
+  
+  <!-- ================================= -->
+   <section id="skills">
+  <h2 class="heading">My <span>Skills</span> </h2>
+
+  <div id="skillsContainer" class="container"></div>
+
+  <div class="add-skill-box">
+    <input type="text" id="skillInput" placeholder="Add new skill...">
+    <input type="number" id="skillPercent" placeholder="Skill %" min="1" max="100">
+    <button id="addSkillBtn">Add</button>
   </div>
-</div>
-</div>
-  </section>
+</section>
+
+   <!-- ============================= -->
+  <!-- <section id="skills">
+  <h2 class="heading">My Skills</h2>
+
+
+ <ul id="skillsList" class="skills-box"></ul> 
+
+ 
+ <div class="add-skill-box">
+    <input type="text" id="skillInput" placeholder="Add new skill...">
+    <button id="addSkillBtn">Add</button>
+  </div>
+</section>  -->
+
   <!-- ________________________Contact section_________________ -->
   <section class="contact " id="contact">
     <div class="contact-container">
@@ -377,59 +408,60 @@
         <h2>Let'<span id="greentext"> Work Together </span></h2>
         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat magni ipsum veniam hic
           voluptatem soluta assumenda, consequuntur in expedita?</p>
-          <div class="contact-detail">
-            <i class="fa-solid fa-phone-volume"></i>
-            <div class="detail">
-              <p>Phone</p>
-              <p>031 2345 6789</p>
-            </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-phone-volume"></i>
+          <div class="detail">
+            <p>Phone</p>
+            <p>031 2345 6789</p>
           </div>
-          <div class="contact-detail">
-               <i class="fa-solid fa-envelope"></i>
-            <div class="detail">
-              <p>Email</p>
-              <p>myemail@gmail.com</p>
-            </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="detail">
+            <p>Email</p>
+            <p>myemail@gmail.com</p>
           </div>
-          <div class="contact-detail">
-      <i class="fa-solid fa-location-dot"></i>
-            <div class="detail">
-              <p>Address</p>
-              <p>123 Anywhere Street, Any City</p>
-            </div>
+        </div>
+        <div class="contact-detail">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="detail">
+            <p>Address</p>
+            <p>123 Anywhere Street, Any City</p>
           </div>
+        </div>
       </div>
 
       <div class="contact-box">
         <form action="">
           <h2 class="heading">Contact <span>Me</span> </h2>
-            <div class="field-box">
-              <input type="text" placeholder="Full Name" id="fname" minlength="3" required >
-              <input type="email" placeholder="Email Address" id="email" required>
-              <input type="tel"  placeholder="Phone Number" id="number"  maxlength="11" required >
-              <input type="text" placeholder="Email Subject" id="topic" required>
-              <textarea type="text" placeholder="Your Message...." id="msg" required ></textarea>
-            </div>
-            <button type="button" class="btn btn-primary" onclick="submitForm()">  
-          Submit
-            </button>
+          <div class="field-box">
+            <input type="text" placeholder="Full Name" id="fname" minlength="3" required>
+            <input type="email" placeholder="Email Address" id="email" required>
+            <input type="tel" placeholder="Phone Number" id="number" maxlength="11" required>
+            <input type="text" placeholder="Email Subject" id="topic" required>
+            <textarea type="text" placeholder="Your Message...." id="msg" required></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="submitForm()">
+            Submit
+          </button>
         </form>
       </div>
     </div>
   </section>
+  
   <section>
     <footer>
-<hr style="margin-top: 40px; color:yellowgreen ;">
-<h3 style="margin-top: 20px;">&copy; 2025 Unsha Sattar</h3>
-<div class="iconcontainer">
-    <i class="fa-brands fa-apple" id="apple"></i>
-    <i class="fa-brands fa-twitter" id="twitter"></i>
-    <i class="fa-brands fa-github-square github" id="github"></i>
-    <i class="fa-brands fa-facebook-square" id="facebook"></i>
-  </div>
-</footer>
+      <hr style="margin-top: 40px; color:yellowgreen ;">
+      <h3 style="margin-top: 20px;">&copy; 2025 Unsha Sattar</h3>
+      <div class="iconcontainer">
+        <i class="fa-brands fa-apple" id="apple"></i>
+        <i class="fa-brands fa-twitter" id="twitter"></i>
+        <i class="fa-brands fa-github-square github" id="github"></i>
+        <i class="fa-brands fa-facebook-square" id="facebook"></i>
+      </div>
+    </footer>
   </section>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="app.js"></script>
 </body>
 
